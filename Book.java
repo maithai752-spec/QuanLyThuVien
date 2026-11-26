@@ -14,4 +14,13 @@ public class Book {
         System.out.println("Ten sach: " + tenSach);
         System.out.println("Tac gia: " + tacGia);
     }
+ 
+     public static Book timKiemSach(Book[] ds, String ma) {
+    for (Book sach : ds) {
+        if (sach.maSach.equals(ma)) {
+            return sach;
+        }
+    }
+    return null;
+}
 }
